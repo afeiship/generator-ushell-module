@@ -2,6 +2,9 @@
 var yeoman = require('yeoman-generator');
 var chalk = require('chalk');
 var yosay = require('yosay');
+var yohelper = require('yeoman-generator-helper');
+require('next-js-core2')(require);
+
 
 module.exports = yeoman.Base.extend({
   prompting: function () {
@@ -11,10 +14,14 @@ module.exports = yeoman.Base.extend({
     ));
 
     var prompts = [{
-      type: 'confirm',
-      name: 'someAnswer',
-      message: 'Would you like to enable this option?',
-      default: true
+      type: 'input',
+      name: 'project_name',
+      message: 'Your project name?',
+      default: yohelper.get_project_name
+    },{
+      type: 'input',
+      name: 'description',
+      message: 'Your project description?'
     }];
 
     return this.prompt(prompts).then(function (props) {
@@ -24,13 +31,17 @@ module.exports = yeoman.Base.extend({
   },
 
   writing: function () {
-    this.fs.copy(
-      this.templatePath('dummyfile.txt'),
-      this.destinationPath('dummyfile.txt')
-    );
+    this.fs.copyTpl(
+      this.templatePath('./**'),
+      this.destinationPath('./'),
+      this.props
+    )
   },
 
   install: function () {
-    this.installDependencies();
+    //this.installDependencies();
+  },
+  end:function () {
+    console.log('enjoy it!');
   }
 });

@@ -17,8 +17,10 @@
     "yeoman-generator"
   ],
   "dependencies": {
-    "yeoman-generator": "^0.23.0",
     "chalk": "^1.0.0",
+    "next-js-core2": "afeiship/next-js-core2",
+    "yeoman-generator": "^0.23.0",
+    "yeoman-generator-helper": "afeiship/yeoman-generator-helper",
     "yosay": "^1.0.0"
   },
   "devDependencies": {
