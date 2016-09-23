@@ -15,7 +15,7 @@ module.exports = yeoman.Base.extend({
 
     var prompts = [{
       type: 'input',
-      name: 'project_name',
+      name: 'module_name',
       message: 'Your project name?',
       default: yohelper.get_project_name
     },{

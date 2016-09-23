@@ -1,4 +1,4 @@
-# <%= project_name %>
+# <%= module_name %>
 <%= description %>
 
 ## resources:
