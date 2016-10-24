@@ -1,5 +1,5 @@
 # <%= module_name %>
-<%= description %>
+> <%= description %>
 
 ## resources:
 
