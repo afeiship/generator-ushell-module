@@ -1,6 +1,6 @@
 {
   "name": "<%= module_name %>",
-  "homepage": "https://github.com/afeiship/ushell-module-git",
+  "homepage": "https://github.com/afeiship/<%= module_name %>",
   "authors": [
     "feizheng <1290657123@qq.com>"
   ],
