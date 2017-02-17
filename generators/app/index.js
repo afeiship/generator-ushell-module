@@ -2,8 +2,8 @@
 var yeoman = require('yeoman-generator');
 var chalk = require('chalk');
 var yosay = require('yosay');
-var yohelper = require('yeoman-generator-helper');
-require('next-js-core2')(require);
+var yoHelper = require('yeoman-generator-helper');
+var nx = require('next-js-core2');
 
 
 module.exports = yeoman.Base.extend({
@@ -17,7 +17,7 @@ module.exports = yeoman.Base.extend({
       type: 'input',
       name: 'module_name',
       message: 'Your project name?',
-      default: yohelper.get_project_name
+      default: yoHelper.discoverRoot
     },{
       type: 'input',
       name: 'description',
