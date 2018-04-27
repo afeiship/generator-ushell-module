@@ -1,0 +1,22 @@
+{
+  "name": "<%= module_name %>",
+  "version": "0.0.1",
+  "description": "<%= description %>",
+  "main": "index.sh",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/afeiship/<%= module_name %>.git"
+  },
+  "keywords": [
+    "ushell",
+    "unix",
+    "shell",
+    "<%= module_name %>"
+  ],
+  "author": "afei",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/afeiship/<%= module_name %>/issues"
+  },
+  "homepage": "https://github.com/afeiship/<%= module_name %>"
+}
