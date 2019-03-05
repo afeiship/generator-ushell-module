@@ -1,6 +1,6 @@
 {
   "name": "<%= module_name %>",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "<%= description %>",
   "main": "index.sh",
   "repository": {
