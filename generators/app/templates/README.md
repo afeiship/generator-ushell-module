@@ -3,5 +3,5 @@
 
 ## installation
 ```shell
-npm i -S afeiship/<%= module_name %> --registry=https://registry.npm.taobao.org
+npm i -S afeiship/<%= module_name %>
 ```
