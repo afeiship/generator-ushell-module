@@ -1,5 +1,5 @@
 {
-  "name": "<%= module_name %>",
+  "name": "@feizheng/<%= module_name %>",
   "version": "1.0.0",
   "description": "<%= description %>",
   "main": "index.sh",
@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/afeiship/<%= module_name %>/issues"
   },
-  "homepage": "https://github.com/afeiship/<%= module_name %>"
+  "homepage": "https://github.com/afeiship/<%= module_name %>",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
 }
