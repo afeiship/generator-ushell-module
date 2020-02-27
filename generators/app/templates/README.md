@@ -3,5 +3,5 @@
 
 ## installation
 ```shell
-npm i -S afeiship/<%= module_name %>
+npm i -S @feizheng/<%= module_name %>
 ```
