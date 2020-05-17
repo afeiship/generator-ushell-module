@@ -1,5 +1,5 @@
 {
-  "name": "generator-ushell-module",
+  "name": "@feizheng/generator-ushell-module",
   "version": "1.0.0",
   "description": "Yeoman generator for ushell module.",
   "homepage": "https://github.com/afeiship/generator-ushell-module",
