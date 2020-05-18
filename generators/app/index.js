@@ -2,8 +2,7 @@
 var yeoman = require('yeoman-generator');
 var chalk = require('chalk');
 var yosay = require('yosay');
-var yoHelper = require('yeoman-generator-helper');
-var nx = require('next-js-core2');
+var yoHelper = require('@feizheng/yeoman-generator-helper');
 
 
 module.exports = yeoman.Base.extend({
@@ -15,10 +14,16 @@ module.exports = yeoman.Base.extend({
 
     var prompts = [{
       type: 'input',
+      name: 'scope',
+      message: 'Your project scope name?',
+      default: 'feizheng'
+    },
+    {
+      type: 'input',
       name: 'module_name',
       message: 'Your project name?',
       default: yoHelper.discoverRoot
-    },{
+    }, {
       type: 'input',
       name: 'description',
       message: 'Your project description?'
@@ -32,16 +37,12 @@ module.exports = yeoman.Base.extend({
 
   writing: function () {
     this.fs.copyTpl(
-      this.templatePath('./**'),
-      this.destinationPath('./'),
+      this.templatePath('**'),
+      this.destinationPath(),
       this.props
     )
   },
-
-  install: function () {
-    //this.installDependencies();
-  },
-  end:function () {
+  end: function () {
     console.log('enjoy it!');
   }
 });
