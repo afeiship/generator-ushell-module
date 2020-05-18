@@ -12,7 +12,7 @@ describe('generator-ushell-module:app', function () {
 
   it('creates files', function () {
     assert.file([
-      'dummyfile.txt'
+      'index.sh'
     ]);
   });
 });
