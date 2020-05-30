@@ -13,9 +13,6 @@
     "shell",
     "<%= module_name %>"
   ],
-  "authors": [
-    "feizheng <1290657123@qq.com>"
-  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/afeiship/<%= module_name %>/issues"
