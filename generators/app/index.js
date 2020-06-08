@@ -39,7 +39,9 @@ module.exports = yeoman.Base.extend({
     this.fs.copyTpl(
       this.templatePath('**'),
       this.destinationPath(),
-      this.props
+      this.props,
+      null,
+      { globOptions: { dot: true } }
     )
   },
   end: function () {
