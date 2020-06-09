@@ -3,5 +3,5 @@
 
 ## installation
 ```shell
-npm i -S <%= scope %>/<%= module_name %>
+npm i -S @<%= scope %>/<%= module_name %>
 ```
