@@ -32,6 +32,7 @@ module.exports = yeoman.Base.extend({
     return this.prompt(prompts).then(function (props) {
       // To access props later use this.props.someAnswer;
       this.props = props;
+      yoHelper.extendProps(this);
     }.bind(this));
   },
 
@@ -43,8 +44,5 @@ module.exports = yeoman.Base.extend({
       null,
       { globOptions: { dot: true } }
     )
-  },
-  end: function () {
-    console.log('enjoy it!');
   }
 });
