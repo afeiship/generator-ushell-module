@@ -4,3 +4,6 @@
 
 docs
 .idea
+package-lock.json
+.release-it.json
+node_modules
