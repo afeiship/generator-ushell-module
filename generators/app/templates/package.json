@@ -21,9 +21,6 @@
   "scripts": {
     "release": "release-it"
   },
-  "devDependencies": {
-    "release-it": "^15.5.0"
-  },
   "publishConfig": {
     "access": "<%= registry.access %>",
     "registry": "<%= registry.publish %>"
